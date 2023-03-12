@@ -1,4 +1,10 @@
 class Token {
+  String type;
+  String literal;
+
+  // Constructor
+  Token(this.type, this.literal);
+
   static const String illegal = "ILLEGAL";
   static const String eof = "EOF";
 
@@ -12,8 +18,7 @@ class Token {
 
   // Delimiters
   static const String comma = ",";
-  static const String semicolon = ";";
-
+  static const String semicolon = ",";
   static const String lparen = "(";
   static const String rparen = ")";
   static const String lbrace = "{";
